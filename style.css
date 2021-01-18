@@ -1,6 +1,6 @@
 body {background-color:black}
-h1{color:grey; font: verdana}
-.maindiv{background-color:white; font:black; width: 300px; padding:20px; 
+h1{color:grey; font-family: verdana, sans-serif}
+.maindiv{background-color:white; font-family: verdana, sans-serif; color:black; width: 300px; padding:20px; 
 border-radius:20px; margin:auto}
 
 
