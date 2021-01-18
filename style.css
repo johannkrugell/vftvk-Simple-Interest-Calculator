@@ -1,5 +1,6 @@
-body {background-color:black;}
+body {background-color:black}
 h1{color:grey; font: verdana}
-maindiv{background-color:white; font:black; width: 300 }
+.maindiv{background-color:white; font:black; width: 300px; padding:20px; 
+border-radius:20px; margin:auto}
 
 
