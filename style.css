@@ -1,4 +1,40 @@
-body {background-color:black}
-h1{color:grey; font-family: verdana, sans-serif}
-.maindiv{background-color:white; font-family: verdana, sans-serif; color:black; 
-width: 300px; padding:20px; border-radius:25px; margin:auto; text-align: left}
+body {
+    background-color:black
+}
+ h1{
+    color:grey;
+     font-family: verdana, sans-serif
+}
+ .maindiv{
+     background-color:white;
+     font-family: verdana, sans-serif;
+     color:black;
+     width: 300px;
+     padding:20px;
+     border-radius:25px;
+     margin:auto;
+    }
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 75px;
+    text-align: left;
+}
+input{
+  display: inline-block;
+  float: right;
+  align: left;
+}
+
+span{
+  display: inline-block;
+  float: right;
+  align: left;
+}
+
+select{
+  display: inline-block;
+  float: right;
+  align: left;
+}

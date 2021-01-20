@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <title>Simple Interest Calculator</title>
-    <body>
-        <div class="maindiv">
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range", min="1",max="20", step = "0.25" ,
-        class = "slider",value = "10.25"  id="rate"><span 10.25%></span> <br/>
-        No. of Years <select input type="number",  id="years">
+   <head>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <title>Simple Interest Calculator</title>
+   <body>
+      <div class="maindiv">
+         <h1>Simple Interest Calculator</h1>
+         <label>Amount</label> <input type="text"  id="principal">  <br/>
+         <label>Rate</label> <input type="range", min="1",max="20", step = "0.25" ,
+         class = "slider",value = "10.25",  id="rate", onchange="show_value()"><span id="slider_value">10.25%</span> <br/>
+         <label>No. of Years</label>
+         <select input type="number",  id="years">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -23,14 +23,15 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-        </select> <br/>
-        Interest : <span id="result"></span><br>
-        <br>
-        <button onclick="compute()">Compute Interest</button>
-        <span id="result"></span>
-        </div>
-    <footer>
-        <p>&#169; Everyone Can Get Rich</p>
-    </footer> 
-    </body>
+         </select>
+         <br/>
+         <span id="result"></span><br>
+         <br>
+         <button onclick="compute()">Compute Interest</button>
+         <span id="result"></span>
+      </div>
+      <footer>
+         <p>&#169; Everyone Can Get Rich</p>
+      </footer>
+   </body>
 </html>
