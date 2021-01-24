@@ -22,9 +22,10 @@ function compute() {
 
 //range slider
 //create variables input and output of range value
-var slider = document.getElementById("rate")
-
-function show_value(slider) {
-  document.getElementById("slider_value").innerHTML = slider
+var rate_per_slider = document.getElementById("rate"); 
+var output = document.getElementById("slider_value"); 
+output.innerHTML = rate_per_slider.value; 
+  
+rate_per_slider.onchange = function() { 
+  output.innerHTML = this.value; 
 } 
- 
