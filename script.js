@@ -17,15 +17,18 @@ console.log(date);
 
 //compute interest earned
 function compute() {
-    document.getElementById("result").innerHTML = "if you deposit"
+    document.getElementById("result").innerHTML = "If you deposit " + principle + ","
+                                                   "at an interest rate of "+ rate + "."
+                                                    "You will receive an amount of " + interest+","
+                                                        "in the year" + No_of_years
 }
 
 //range slider
 //create variables input and output of range value
-var rate_per_slider = document.getElementById("rate"); 
-var output = document.getElementById("slider_value"); 
-output.innerHTML = rate_per_slider.value; 
-  
-rate_per_slider.onchange = function() { 
-  output.innerHTML = this.value; 
+var slider = document.getElementById("rate");
+var output = document.getElementById("slider_value");
+output.innerHTML = slider.value;
+
+function slider_change() {
+  document.getElementById("rate").value.innerHTML =this.value
 } 

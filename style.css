@@ -61,29 +61,7 @@ label{
    position: relative;
    left:70px; 
    }
-}
 
-/* The slider itself */
-.slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
-  width: 35%; /* Full-width */
-  height: 5px; /* Specified height */
-  background: #0000ff; /* blue background */
-  outline: 5px grey; /* set outline*/
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-}
-
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  width: 15px; /* Set a specific slider handle width */
-  height: 15px; /* Slider handle height */
-  background: #0000ff; /* blue background */
-  cursor: pointer; /* Cursor on hover */
-}
 
 #footer {
   position: relative;
