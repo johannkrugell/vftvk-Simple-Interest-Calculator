@@ -1,78 +1,109 @@
 /*set background color of page*/
 body {
-    background-color:black
+	background-color: black
 }
- 
-/* set color and font of heading*/ 
- h1{
-    color:grey;
-     font-family: verdana, sans-serif
+
+/* set color and font of heading*/
+h1 {
+	color: grey;
+	font-family: verdana, sans-serif
 }
 
 /*font,color,padding for maindiv*/
- .maindiv{
-     background-color:white;
-     font-family: verdana, sans-serif;
-     font-size:medium;
-     color:black;
-     width: 500px;
-     height: 350px;
-     padding: 20px;
-     border-radius:25px;
-     margin:auto;
-    }
+.maindiv {
+	background-color: white;
+	font-family: verdana, sans-serif;
+	font-size: medium;
+	color: black;
+	width: 500px;
+	height: 350px;
+	padding: 20px;
+	border-radius: 25px;
+	margin: auto;
+}
 
 /* align the lables*/
-label{
-    display: inline;
-    float: left; 
-    clear:both;
-    text-align: left;
-    width: 120px; /*with of the lables for "Interest / Number of years" to fit*/
-    padding: 5px;
-    padding-left:70px; /*move labels in on page*/
-   }
+label {
+	display: inline;
+	float: left;
+	clear: both;
+	text-align: left;
+	width: 120px;
+	/*with of the lables for "Interest / Number of years" to fit*/
+	padding: 5px;
+	padding-left: 70px;
+	/*move labels in on page*/
+}
 
 /* alignment of input fields witht the labels*/
-.amount_css{
-    display: inline;
-    float: left;
-    clear: right;
-   }
+.amount_css {
+	display: inline;
+	float: left;
+	clear: right;
+}
 
-.years_css{
-    display: inline;
-    float: left;
-    clear: right;
-   }
+/* alignment of the year selector*/
+.years_css {
+	display: inline;
+	float: left;
+	clear: right;
+}
 
-.interest_css{
-    display: inline;
-    float: left;
-    clear: right;
-   }
+/*alignment of the interest selected after the slider */
+.interest_css {
+	display: inline;
+	float: left;
+	clear: right;
+    -webkit-appearance: none;  /* Override default CSS styles */
+  
+    /* slider bar formatting */ 
+    appearance: none;
+    width: 28%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: #00008b; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+     
+    /* slider hanle formating */
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 150px; /* Set a specific slider handle width */
+    height: 5px; /* Slider handle height */
+    background: #00008b; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
 
-.slider_css{
-    display: inline;
-    float: left;
-    clear: right;
-   }
+}
 
-.button_css{
-   position: relative;
-   left:70px; 
-   }
+/* alignment of the slider output*/
+.slider_css {
+	display: inline;
+	float: left;
+	clear: right;
+}
 
-.result_paragraph{
-    left:110px;
-    height:500px; 
-   }
- 
 
+/* alignment of button */
+.button_css {
+	position: relative;
+	left: 70px;
+}
+
+/* alignment of the result after button click*/
+.result_paragraph {
+	position: relative;
+    left: 70px;
+	height: 500px;
+}
+
+/* placement and formatting of footer*/
 #footer {
-  position: relative;
-  bottom: 70px;
-  left: 20px;
-  width: 100%;
-  height: 25px;            /* Footer height */
+	position: relative;
+	bottom: 70px;
+	left: 20px;
+	width: 100%;
+	height: 25px;
+	/* Footer height */
 }
