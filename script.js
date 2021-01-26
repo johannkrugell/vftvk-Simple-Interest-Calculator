@@ -3,15 +3,15 @@ function compute() {
 
 //create the variable principle assign html element to variable//
 var principle = document.getElementById("principal").value; //amount value and var
-var principle_highlighted = principle.fontcolor("red"); //new var that updates font color
+var principle_highlighted = principle.fontcolor("yellow"); //new var that updates font color
 
 var rate = document.getElementById("rate").value;
-var rate_highlighted = rate.fontcolor("red");
+var rate_highlighted = rate.fontcolor("yellow");
 
 var years = parseInt(document.getElementById("years").value); // parse years as integer to add up
 
 var interest = String(principle * years * rate / 100); // parse the result to String to color the font
-var interest_highlighted = interest.fontcolor("red");
+var interest_highlighted = interest.fontcolor("yellow");
 
 var system_year = parseInt(new Date().getFullYear()); //parse as interger
 var No_of_years = String(system_year+ years); //parse as string to color the font
@@ -19,12 +19,12 @@ var No_of_years_highlighted = No_of_years.fontcolor("red");
 
     if(principle== 0){ //funtion to check amount is not zero
             alert("Enter a positive number");
-            principle.focus();
+            document.getElementByIdprinciple("principle").focus();
             return false;
       }
     if(principle < 0){ //function to check amount is not negative
             alert("Enter a positive number");
-            principle.focus();
+            document.getElementByIdprinciple("principle").focus();
             return false;
       }
       
