@@ -17,11 +17,19 @@ function compute() {
 //create the variable principle assign html element to variable//
 //document.getElementById("principal").value.innerHTML = principle;
 var principle = document.getElementById("principal").value;
+var principle_highlighted = principle.fontcolor("red");
+
 var rate = document.getElementById("rate").value;
-var years = document.getElementById("years").value;
-var interest = principle * years * rate / 100
+var rate_highlighted = rate.fontcolor("red");
+
+var years = parseInt(document.getElementById("years").value);
+
+var interest = String(principle * years * rate / 100);
+var interest_highlighted = interest.fontcolor("red");
+
 var system_year = parseInt(new Date().getFullYear());
-var No_of_years = system_year+ years;
+var No_of_years = String(system_year+ years);
+var No_of_years_highlighted = No_of_years.fontcolor("red");
 
     if(principle== 0){
             alert("Enter a positive number");
@@ -34,10 +42,10 @@ var No_of_years = system_year+ years;
             return false;
       }
 
-      document.getElementById("result").innerHTML = "If you deposit " + principle + "," +
-                                                   "at an interest rate of "+ rate + "%." +
-                                                   "You will receive an amount of " + interest + "," + 
-                                                   "in the year " + No_of_years
+      document.getElementById("result").innerHTML = "If you deposit " + principle_highlighted + "," + "<br>"+
+                                                    "at an interest rate of "+ rate_highlighted+ "%." +"<br>"+
+                                                    "You will receive an amount of " + interest_highlighted + ","+"<br>" +
+                                                    "in the year " + No_of_years_highlighted
 
     function newFunction() {
         return principle.style.color = "red";

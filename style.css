@@ -64,16 +64,14 @@ label{
    }
 
 .result_paragraph{
-    display:inline;
-    left: 90px; 
-    float: right;
-    text-align:right;
-    word-wrap: break-word;
-     }
+    left:110px;
+    height:500px; 
+   }
+ 
 
 #footer {
   position: relative;
-  bottom: 125px;
+  bottom: 70px;
   left: 20px;
   width: 100%;
   height: 25px;            /* Footer height */
